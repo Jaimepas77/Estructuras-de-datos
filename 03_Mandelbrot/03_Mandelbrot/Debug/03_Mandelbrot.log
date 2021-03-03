@@ -1,0 +1,6 @@
+﻿  03_Mandelbrot.cpp
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\03_Mandelbrot\03_Mandelbrot\03_Mandelbrot.h(55,14): warning C4244: 'return': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\03_Mandelbrot\03_Mandelbrot\03_Mandelbrot.h(54): message : al compilar la función del miembro clase plantilla "int Complejo<double>::modulo(void)"
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\03_Mandelbrot\03_Mandelbrot\03_Mandelbrot.cpp(12): message : Vea la referencia a la creación de una instancia de la función plantilla "int Complejo<double>::modulo(void)" que se está compilando
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\03_Mandelbrot\03_Mandelbrot\03_Mandelbrot.h(63): message : Vea la referencia a la creación de una instancia de clase plantilla "Complejo<double>" que se está compilando
+  03_Mandelbrot.vcxproj -> C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\03_Mandelbrot\Debug\03_Mandelbrot.exe
