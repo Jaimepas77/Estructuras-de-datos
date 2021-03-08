@@ -85,10 +85,17 @@ inline std::ostream& operator << (std::ostream& out, Hora const& f) {
 }
 inline std::istream& operator >> (std::istream& in, Hora& f) {
 	std::string fecha;
-	in >> fecha;
-	int h = (fecha[0] - '0') * 10 + (fecha[1] - '0');
-	int m = (fecha[3] - '0') * 10 + (fecha[4] - '0');
-	int s = (fecha[6] - '0') * 10 + (fecha[7] - '0');
+	//in >> fecha;
+	int h;// = (fecha[0] - '0') * 10 + (fecha[1] - '0');
+	int m;// = (fecha[3] - '0') * 10 + (fecha[4] - '0');
+	int s;// = (fecha[6] - '0') * 10 + (fecha[7] - '0');
+
+	in >> h;
+	in.get();
+	in >> m;
+	in.get();
+	in >> s;
+
 	f = Hora(h, m, s);
 	return in;
 }
