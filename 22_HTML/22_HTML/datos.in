@@ -1,0 +1,6 @@
+<HTML> <p>Este es el primer <b>parrafo</b> de este <i>texto</i></p>. </HTML>
+<HTLM><puedo tener/>simbolos que no sean delimitadores<j>.No daran <<error>>.</HTML>
+<HTML>Puedo tener texto <q>antes</q> y <q>despues</q> del delimitador</HTML>
+<HTML><p>Pero <q><b>siempre</b> debo cerrar todos los bloques</p></HTML>
+<HTML> y <i> no dejar nada abierto</HTML>
+<HTML><p>Tampoco puedo cerrar de mas</p></b></HTML>
