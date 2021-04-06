@@ -1,0 +1,59 @@
+11
+5 10 8 4 6 5 7 12 5 3 8
+5
+8 7 6 5 4
+4
+6 8 10 12
+6
+3 3 3 3 3 3
+8
+10 3 4 5 9 1 2 3
+0
+
+
+// IMPORTANTE:
+// Nombre del alumno:
+// Usuario del juez de clase:
+// Usuario que se ha utilizado en esta prueba:
+
+
+#include <iostream>
+
+// Explicación de la solución empleada
+
+
+
+// Coste de la solución
+
+
+
+
+bool resuelveCaso() {
+    int nElem; std::cin >> nElem;
+    if (nElem == 0) return false;
+
+
+    // A completar por el alumno
+
+
+
+    return true;
+}
+
+int main() {
+    
+#ifndef DOMJUDGE
+    std::ifstream in("datos.txt");
+    auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+#endif
+    
+    while (resuelveCaso()) {} //Resolvemos todos los casos
+    
+    
+#ifndef DOMJUDGE // para dejar todo como estaba al principio
+    std::cin.rdbuf(cinbuf);
+    system("PAUSE");
+#endif
+    
+    return 0;
+}
