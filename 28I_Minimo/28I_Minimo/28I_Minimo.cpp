@@ -8,36 +8,29 @@
 #include <algorithm>
 #include "bintree_eda.h"
 
-
-/*template <class T>
+template <class T>
 class bintree_ext : public bintree <T> {
 	using Link = typename bintree <T>::Link;
 public:
 	bintree_ext() : bintree <T>() {}
-	bintree_ext(bintree_ext <T> const& l, T const& e, bintree_ext <T > const& r) :
-		bintree <T>(l, e, r) {}
-	int min()
+	bintree_ext(bintree_ext <T> const& l, T const& e, bintree_ext <T > const& r) : bintree <T>(l, e, r) {}
+	T minimoNodos()
 	{
-		return equilibrado(this -> raiz).eq;
-	}// función que resuelve el problema
+		return minimoNodos(this->raiz);
+	}
 private:
-	struct tSol {
-		bool eq;
-		int altura;
-	};
-	tSol minimo(Link r) {
-		if (r == nullptr) { return { true, 0 }; }
-		else {
-			tSol Izda = equilibrado(r->left);
-			tSol Drch = equilibrado(r->right);
-			return { Izda.eq && Drch.eq &&
-			std::abs(Izda.altura - Drch.altura) <= 1 ,
-			std::max(Izda.altura , Drch.altura) + 1 };
-		}
+	T minimoNodos(Link tree) {
+		if (tree->left == nullptr && tree->right == nullptr)
+			return tree->elem;
+		else if (tree->left == nullptr)
+			return std::min(minimoNodos(tree->right), tree->elem);
+		else if (tree->right == nullptr)
+			return std::min(minimoNodos(tree->left), tree->elem);
+		else
+			return std::min(std::min(tree->elem, minimoNodos(tree->left)), minimoNodos(tree->right));
 	}
 };
-
-template <typename T >
+template <typename T>
 inline bintree_ext <T> leerArbol_ext(T vacio) {
 	T raiz;
 	std::cin >> raiz;
@@ -45,15 +38,16 @@ inline bintree_ext <T> leerArbol_ext(T vacio) {
 		return {};
 	}
 	else { // leer recursivamente los hijos
-		bintree_ext <T > iz = leerArbol_ext(vacio);
-		bintree_ext <T > dr = leerArbol_ext(vacio);
-		return { iz, raiz, dr };
+		bintree_ext <T> iz = leerArbol_ext(vacio);
+		bintree_ext <T> dr = leerArbol_ext(vacio);
+		return { iz , raiz , dr };
 	}
-}*/
+}
+
 
 template <class T>
-T resolver(bintree <T> tree) {
-	return tree.root();
+T resolver(bintree_ext <T> tree) {//Elemento mínimo
+	return tree.minimoNodos();
 }
 
 // Resuelve un caso de prueba, leyendo de la entrada la
@@ -67,13 +61,13 @@ bool resuelveCaso() {
 
 	if (tipo == 'N')
 	{
-		bintree<int> tree = leerArbol(-1);
+		bintree_ext<int> tree = leerArbol_ext(-1);
 		int sol = resolver(tree);
 		std::cout << sol << '\n';
 	}
 	else
 	{
-		bintree<std::string> tree = leerArbol((std::string)"#");
+		bintree_ext<std::string> tree = leerArbol_ext((std::string)"#");
 		std::string sol = resolver(tree);
 		std::cout << sol << '\n';
 	}
