@@ -4,14 +4,14 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
-#include <map>
+#include <unordered_map>
 
 typedef long long int lli;
 
 // función que resuelve el problema
 int resolver(int datos) {
     int record = 0, tmp = 0;
-    std::map<lli, int> pelis;//Clave - capítulo; valor: día
+    std::unordered_map<lli, int> pelis;//Clave - capítulo; valor: día
 
     lli clave;//Capítulo
     int valor;//Día
