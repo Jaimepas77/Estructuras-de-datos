@@ -66,7 +66,8 @@ public:
 		}
 	}
 
-	vector<nombreEmpleo> listadoEmpleos(nombrePersona pers)//Devuelve un listado con todos los empleos a los que opta un candidato específico
+	vector<nombreEmpleo> listadoEmpleos(nombrePersona pers) const //(Me olvidé de poner el const antes de hacer el vídeo)
+		//Devuelve un listado con todos los empleos a los que opta un candidato específico
 		// Coste -> (O(n) siendo n el nº de empleos de la persona (coste lineal)
 	{
 		try
