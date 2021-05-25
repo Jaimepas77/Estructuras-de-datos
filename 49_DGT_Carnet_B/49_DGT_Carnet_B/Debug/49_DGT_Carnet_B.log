@@ -1,0 +1,4 @@
+﻿  49_DGT_Carnet_B.cpp
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\49_DGT_Carnet_B\49_DGT_Carnet_B\Carnet.h(101,28): warning C4018: '>=': no coinciden signed/unsigned
+C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\49_DGT_Carnet_B\49_DGT_Carnet_B\Carnet.h(113,28): warning C4018: '>=': no coinciden signed/unsigned
+  49_DGT_Carnet_B.vcxproj -> C:\Users\jaime\Documents\_Universidad\Asignaturas\2º\_Segundo cuatrimestre\Estructuras de datos\49_DGT_Carnet_B\Debug\49_DGT_Carnet_B.exe

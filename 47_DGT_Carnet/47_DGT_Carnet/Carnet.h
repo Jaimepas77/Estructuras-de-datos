@@ -6,6 +6,7 @@
 
 #include <unordered_map>
 #include <stdexcept>
+#include <list>
 #include <vector>
 
 using namespace std;
