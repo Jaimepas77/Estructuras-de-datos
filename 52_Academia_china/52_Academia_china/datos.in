@@ -1,0 +1,22 @@
+nuevo_estudiante 123A 1
+grupo_estudiante 123A
+promocionar 123A
+grupo_estudiante 123A
+nuevo_estudiante 456B 2
+novato 2
+FIN
+nuevo_estudiante 789C 6
+nuevo_estudiante 123C 5
+promocionar 123C
+promocionar 789C
+promocionar 123C
+graduados
+grupo_estudiante 123C
+FIN
+nuevo_estudiante 456D 6
+nuevo_estudiante 456D 1
+promocionar 456D
+promocionar 456D
+nuevo_estudiante 456D 1
+promocionar 789E
+FIN
